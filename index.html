@@ -6,61 +6,101 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>This is Andy's HTML Scrapbook</h1>
-    <h2>I am an h2</h2>
-    <h3>I am an h3</h3>
-    <h4>I am an h4</h4>
-    <h5>I am an h5</h5>
+    <header>
+        <h1><a id="Top">This is Andy's HTML Scrapbook</a></h1>
+        <h2>With each higher number</h2>
+        <h3>The writing gets</h3>
+        <h4>smaller and</h4>
+        <h5>smaller</h5>
+    </header>  
 
+<main>
+<h2>Displaying text</h2>
+<p>
+    P - Use this to add any text that you want on your page <br>
+    Q - indicates that the <q>enclosed text</q> is a short inline quotation. Will put the text in quotation marks<br>
+    Code - <code>use this to display text that it represented as code</code> <br>
+    Br - creates line break</br>
+    Strong <strong>Puts words in bold</strong>
+</p>
+</main>
 
-<h1>Displaying text</h1>
-<p>Use this to add any text that you want on your page</p>
-<!--
-<span>
-
-<q>
-
-<code>
-
-<br>
-
-Compartmentalisation
 <div>
+    <h2>Compartmentalisation</h2>
+    <p><strong>Div</strong> - Generic container for flow content. It has no effect on the content or layout until styled using CSS</p>
+    <p><strong>Span</strong> - a generic inline container for <span>phrasing content</span>, can be used to group elements for styling purposes (using the class or id attributes)</p>
+</div>
 
-<span>
 
-Lists
-Unordered lists:
 
+<div>
+    <h2>Lists</h2>
 <ul>
-
-<li></li>
-
+    <li>This is an unordered lists</li>
+    <li>Use it to put things</li>
+    <li>in bullit points</li>
 </ul>
 
-Ordered lists:
-
 <ol>
-
-<li></li>
-
+    <li>This is an ordered list</li>
+    <li>use it when you want</li>
+    <li>things to be numbered</li>
 </ol>
+</div>
 
-Images
-<img src="cat.png" alt="Surprised Cat" />
+<figure>
+    <h2>Images</h2>
+    <img src="HelpfulCat.jpg" alt="Cat helping with work" />
+    <figcaption>Rory the family cat being helpful as usual</figcaption>
+    <br>
+    <p>src - (mandatory) the location of the image relative to location of the HTML file, unless a full (absolute) URL (a.k.a http://) is given.<br>
+    Use Alt - this tells you what should be there if the image doesn't load <br>
+    Images are self closing</p>    
+</figure>
+<section>
+    <h2>Links</h2>
+    <p>You can link directly to a webpage by "a href="url">link text a". View the source code to see how I have done this.
+        <a href="https://en.wikipedia.org/wiki/Cats_(2019_film)">Cats</a> <br>
+        You can also link to parts of your page by giving it an ID in the section you want to jump to as follows
+        <a href="#Top">Click here to return to top</a>
+    </p>
+</section>
+<section>
+   <h2>Tables</h2>
+    <p> This <a href="https://html.com/tables/">page</a> is an excellent guide to Tables</p>
+</section>
 
-Note src - (mandatory) the location of the image relative to location of the HTML file, unless a full (absolute) URL (a.k.a http://) is given.
+<section>
+    <h2>Forms</h2>
+    <p>Below is a basic form. This <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form">guide</a> 
+        is uselful to refer to when doing forms. CSS is used to style forms but that is another story.<br>
+    Buttons are an essential part of a form and you can learn more about them   
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">here.</a> They are also styled with CSS</p>
+    <form action="/my-handling-form-page" method="post">
+        
+           <label for="name">Name:</label>
+           <input type="text" id="name" name="user_name">
+         <br>
+           <label for="mail">E-mail:</label>
+           <input type="email" id="mail" name="user_email">
+         <br>
+           <label for="msg">Message:</label>
+           <textarea id="msg" name="user_message"></textarea>
+         <br>      
+            <button type="submit">Send your message</button>
+    </form>
+</section>
+   
 
-Note alt - (optional) what appears in the tooltip when you hover over the image. Good for accessibility. Best practice.
 
-Note: Images are self-closing
+<!--
 
-Links (or anchors)
-<a href=”index.html”>Home</a>
 
-Note href - (mandatory) the location of what were are linking to relative to location of the HTML file, unless a full (absolute) URL (a.k.a http://) is given.
--->    
+
+
+
+
+
 
 </body>
 </html>
